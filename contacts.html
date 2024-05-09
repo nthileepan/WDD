@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .contact-section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .map-container {
+            height: 400px;
+            margin-bottom: 30px;
+        }
+
+        .social-media {
+            margin-top: 30px;
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-media li {
+            margin: 0 10px;
+        }
+
+        .social-media a {
+            color: #ffffff;
+            background-color: #555555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            background-color: #333333;
+        }
+
+        .social-media i {
+            font-size: 20px;
+        }
+
+        @media (max-width: 576px) {
+            .contact-section {
+                padding: 40px 0;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid position-relative" id="dnav">
+            <nav class="navbar navbar-expand-md " id="navbar">
+                <div id="pix" class="navbar-brand text-dark">Lanka PC</div>
+                <button class="navbar-toggler" type="button" onclick="toggleNav()">
+                    <span class="fa fa-search p-2"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-item nav-link active" href="index.html">Home </a>
+                        <a class="nav-item nav-link" href="product.html">Products <span class="sr-only"></span></a>
+                        <a class="nav-item nav-link" href="#">Contacts </a>
+                        <a class="nav-item nav-link" href="Aboutus.html">About Us </a>
+                        <a class="nav-item nav-link" href="#"><i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <main>
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5"
+                                        placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section">
+                <div class="container">
+                    <h2 >Contact Us</h2>
+                    <p class="text-white">Feel free to reach out to us for any inquiries or to learn more about our products and services.
+                        We'd be happy to assist you.</p>
+
+                    <div class="map-container">
+                       
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.180335204103!2d80.01467227489225!3d9.665627790423379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe56a834bb7681%3A0xbf7df984b40cf37c!2sBCAS%20Jaffna%20Campus!5e0!3m2!1sen!2slk!4v1687674351880!5m2!1sen!2slk"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="social-media">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <footer class="container-fluid bg-dark text-white py-3 justify-content-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Lanka PC</h3>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Products</a></li>
+                    <li><a href="#" class="text-white">About Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>© 2023 Online Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>

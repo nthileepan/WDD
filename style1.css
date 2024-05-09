@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid transparent;
+    color: blue;
+}
+
+.navbar-brand {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid blue;
+    transition: .1s;
+}
+
+/*-------------SPAN-----------*/
+
+#sc1 {
+    color: blue;
+    font-weight: bold;
+}
+
+#sc2 {
+    color: rgb(247, 37, 133);
+    font-weight: bold;
+}
+
+#sc3 {
+    color: rgb(114, 9, 183);
+    font-weight: bold;
+}
+
+#sc4 {
+    color: rgb(181, 23, 158);
+    font-weight: bold;
+}
+
+/*-------------Button-----------*/
+
+#LPCB {
+    color: white;
+    background-color: blue;
+}
+
+#PCB {
+    color: white;
+    background-color: rgb(247, 37, 133);
+}
+
+#LB {
+    color: white;
+    background-color: rgb(114, 9, 183);
+}
+
+#MB {
+    color: white;
+    background-color: rgb(181, 23, 158);
+}
+
+/*---------------zoom card----------------*/
+.incont {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 50%;
+
+}
+
+.incon {
+    background-image: url('image/ezgif-4-6e0ac5285c.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.incon img {
+    transition: 1s;
+}
+
+.outcon:hover .incon {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    border-radius: 4% !important;
+    transition: 1s;
+}
+
+.outcon:hover img {
+    width: 200px !important;
+    height: 200px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: -9% !important;
+    transition: 1s;
+}
+
+.outcon:hover .h4in {
+    opacity: 1 !important;
+}
+
+.outcon:hover .incont {
+    opacity: 1 !important;
+    transition: 2s !important;
+}
+
+.outcon:hover .bin {
+    opacity: 1 !important;
+}
+
+.outcon:hover .pprice {
+    display: none !important;
+}
+
+.incon2 {
+    background-image: url('image/gif-bg-3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.incon2 img {
+    transition: 1s;
+}
+
+.outcon2:hover .incon2 {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    border-radius: 4% !important;
+    transition: 1s;
+}
+
+.outcon2:hover img {
+    width: 210px !important;
+    height: 190px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: -9% !important;
+    transition: 1s;
+}
+.outcon2:hover #se {
+    width: 180px !important;
+    height: 190px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: -9% !important;
+    transition: 1s;
+}
+.outcon2:hover #sam {
+    width: 210px !important;
+    height: 170px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: -9% !important;
+    transition: 1s;
+}
+.outcon2:hover #goo {
+    width: 180px !important;
+    height: 170px !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: -9% !important;
+    transition: 1s;
+}
+
+
+
+.outcon2:hover .h4in {
+    opacity: 1 !important;
+}
+
+.outcon2:hover .incont {
+    opacity: 1 !important;
+    transition: 2s !important;
+}
+
+.outcon2:hover .bin {
+    opacity: 1 !important;
+}
+
+.outcon2:hover .pprice {
+    display: none !important;
+}
+
+@media (max-width: 1440px) {
+    .outcon:hover img {
+        width: 220px !important;
+        height: 220px !important;
+        position: absolute !important;
+        top: -50% !important;
+        left: 25% !important;
+        transition: 1s;
+    }
+    .outcon:hover .incont {
+        opacity: 1 !important;
+        width: 100% !important;
+        transition: 2s !important;
+        left: 1% !important;
+        top:  30% !important;
+    }
+    .outcon2:hover img {
+        width: 220px !important;
+        height: 220px !important;
+        position: absolute !important;
+        top: -50% !important;
+        left: 25% !important;
+        transition: 1s;
+    }
+    .outcon2:hover .incont {
+        opacity: 1 !important;
+        width: 100% !important;
+        transition: 2s !important;
+        left: 1% !important;
+        top:  30% !important;
+    }
+}
+/*-------------other products-----------*/
+.mainc{
+    background-image: url(image/ezgif-4-6e0ac5285c.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cleft1{
+    animation: goleft forwards;
+    animation-duration: 2s;
+}
+.cright1{
+    animation: gorift forwards;
+    animation-duration: 2s;
+}
+
+@keyframes goleft {
+    from {
+        transform: translateX(-400px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes gorift {
+    from {
+        transform: translateX(400px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*-------------flip card-----------*/
+.flip-card {
+    width: 400px;
+    height: 350px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5%;
+    background-image: url(image/gif-bg-2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/*-------------section-----------*/
+#se1 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/ezgif-4-6e0ac5285c.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.se2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+
+.bse2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+
+}
+
+.bse2 .simg2 {
+    animation: imgmove;
+    animation-duration: 1s;
+
+}
+
+@keyframes imgmove {
+    from {
+        transform: translatex(400px);
+    }
+
+    to {}
+}
+
+.imgclas {
+    opacity: 0;
+}
+
+.se3 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+}
+
+.bse3 {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+
+#se3id {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.imgc {
+    animation: tbefore;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.simg3 {
+    animation: tafter;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes tbefore {
+    0% {
+
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translatex(-50%)
+    }
+}
+
+@keyframes tafter {
+    0% {
+
+        transform: translatex(-50%)
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+}
+
+#se4 {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1 {
+    overflow: hidden;
+
+}
+
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9998;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+#se5 {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#se5a {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#dnav {
+    background-color: white;
+    z-index: 9999;
+    top: 0%;
+}
+
+/*------card------*/
+.inner {
+    overflow: hidden;
+}
+
+#cards {
+    height: 800px !important;
+}
+
+#cards #imgcard:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+/*------slider------*/
+
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.slides {
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+
+
+
+/*---------------------ptoduvt page -------------------*/
+
+
+

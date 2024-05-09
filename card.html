@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.min.css">
+
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="scroll-behavior: smooth;">
+    <div>
+        <div class="container-fluid position-relative" id="dnav">
+            <nav class="navbar navbar-expand-md " id="navbar">
+                <div id="pix" class="navbar-brand text-dark">Lanka PC</div>
+                <button class="navbar-toggler" type="button" onclick="toggleNav()">
+                    <span class="fa fa-search p-2"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-item nav-link active" href="index.html">Home </a>
+                        <a class="nav-item nav-link" href="commonpro.html">Products <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="contacts.html">Contacts </a>
+                        <a class="nav-item nav-link" href="Aboutus.html">About Us </a>
+                        <button style="border: none;outline: none;background: none; padding: 0; margin: 0;"><a
+                                class="nav-item nav-link" href="#"><i class="fa fa-shopping-cart"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <div class="row">
+            <h4 style="font-weight: 900; font-size: 30px; color: blue;">SHOPPING CARD</h4>
+            <div class="col-8" style="border-style: solid;">
+                <div id="add" class="row">
+
+                </div>
+            </div>
+            <div class="col-4"
+                style="border-style: solid;height: 260px;display: flex;justify-content: center;position: relative;">
+                <p style="margin-top: 10px;font-weight: 900; font-family: Arial, Helvetica, sans-serif;"><span
+                        id="itemno">1 </span> Items in your Bag</p>
+
+                <div
+                    style="border-style: solid; border-left: 0px; border-right: 0px; width: 100%; height: 80%;position: absolute;bottom: 0%;">
+                    <div class="row">
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">Subtotal</p>
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">RS:<span
+                                    id="subt">00</span></p>
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">Tax (5%)</p>
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">RS:<span
+                                    id="tax">00</span></p>
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">Shipping</p>
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">RS:<span
+                                    id="ship">00</span></p>
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">Grand Total</p>
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">RS:<span
+                                    id="total">00</span></p>
+                        </div>
+                        <div class="col-6">
+
+                        </div>
+                        <div class="col-6" style="display: flex;justify-content: center;position: relative;">
+                            <button id="buyButton" class="btn btn-primary">CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <h3>Thank you for buying!</h3>
+                        <p>We appreciate your purchase.</p>
+                        <button id="closeButton">Close</button>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <script src="cart_page.js"></script>
+    <script src="bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
